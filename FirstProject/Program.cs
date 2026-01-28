@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using FirstProject._01_IntrudcaoCSharp;
+using FirstProject._02_EntradaDeDados;
 using System;
 using System.Globalization;
 
@@ -8,24 +10,7 @@ namespace FirstProject
     {
         static void Main(string[] args)
         {
-            double x = 10.35784;
-            int z = 32;
-            char gener = 'F';
-            int a,b;
-
-            Console.WriteLine(x);
-            Console.WriteLine(x.ToString("F4"));
-            Console.WriteLine(x.ToString("F2", CultureInfo.InvariantCulture));
-            Console.WriteLine("Resultado = " + x); Console.WriteLine("O valor do troco é " + x + " reais");
-            Console.WriteLine("O valor do troco é " + x.ToString("F2") + " reais");
-            Console.WriteLine("A idade da paciente é "+ z + " anos e o sexo dela é "+ gener);
-
-            a = 5;
-            b = 2*a;
-            Console.WriteLine(a);
-            Console.WriteLine(b);
-            Console.ReadLine();
-
+            EntradaDeDados.Executar();
         }
     }
 }
