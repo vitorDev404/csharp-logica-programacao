@@ -11,7 +11,7 @@ namespace FirstProject
     {
         static void Main(string[] args)
         {
-            FuncoesMatematicasEmCSharp.FuncoesMatematicasEmCSharp.Executar();
+            Exercicios.Exercicios.Executar();
         }
     }
 }
