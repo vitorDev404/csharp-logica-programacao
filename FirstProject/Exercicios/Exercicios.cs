@@ -58,14 +58,64 @@ namespace FirstProject.Exercicios
             //DIFERENCA = (A * B) - (C * D);
             //Console.WriteLine("DIFERENÇA = " + DIFERENCA);
             //-------------------------------------------------------------------
-            int numeroDoFuncionario, horasTrabalhadas;
-            double valorDaHora,salario;
-            numeroDoFuncionario = int.Parse(Console.ReadLine());
-            horasTrabalhadas = int.Parse(Console.ReadLine());
-            valorDaHora = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            salario = horasTrabalhadas * valorDaHora;
-            Console.WriteLine("NUMBER = " + numeroDoFuncionario);
-            Console.WriteLine("SALARY = " + salario.ToString("2F", CultureInfo.InvariantCulture));
+            //EXERCICIO 6 - Escreva um programa que leia o número de um funcionário,
+            //seu número de horas trabalhadas, o valor que recebe por hora e calcula o salário desse funcionário.
+            //A seguir, mostre o número e o salário do funcionário, com duas casas decimais.
+            //int numeroDoFuncionario, horasTrabalhadas;
+            //double valorDaHora,salario;
+            //numeroDoFuncionario = int.Parse(Console.ReadLine());
+            //horasTrabalhadas = int.Parse(Console.ReadLine());
+            //valorDaHora = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //salario = horasTrabalhadas * valorDaHora;
+            //Console.WriteLine("NUMBER = " + numeroDoFuncionario);
+            //Console.WriteLine("SALARY = " + salario.ToString("F2", CultureInfo.InvariantCulture));
+            //-------------------------------------------------------------------
+            //EXERCICIO 7 - Neste problema, deve-se ler o código de uma peça 1, o número de peças 1,
+            //o valor unitário de cada peça 1, o código de uma peça 2, o número de peças 2 e o valor unitário de cada peça 2.
+            //Após, calcule e mostre o valor a ser pago.
+            //int codigoPeca1, numeroPeca1, codigoPeca2, numeroPeca2;
+            //double valorPeca1, valorPeca2, valorAPagar;
+            //string[] valores = Console.ReadLine().Split(' ');
+            //codigoPeca1 = int.Parse(valores[0]);
+            //numeroPeca1 = int.Parse(valores[1]);
+            //valorPeca1 = double.Parse(valores[2], CultureInfo.InvariantCulture);
+
+            //valores = Console.ReadLine().Split(' ');
+            //codigoPeca2 = int.Parse(valores[0]);
+            //numeroPeca2 = int.Parse(valores[1]);
+            //valorPeca2 = double.Parse(valores[2],CultureInfo.InvariantCulture);
+
+            //valorAPagar = valorPeca1 *numeroPeca1 + valorPeca2* numeroPeca2;
+
+            //Console.WriteLine("VALOR A PAGAR: R$" + valorAPagar.ToString("F2", CultureInfo.InvariantCulture));
+            //-------------------------------------------------------------------
+            //EXERCICIO 8 - Calcule o consumo médio de um automóvel
+            //sendo fornecidos a distância total percorrida (em Km) e o total de combustível gasto (em litros).
+            //int distanciaKm;
+            //double gastoLitros, totalCombustivel;
+            //distanciaKm = int.Parse(Console.ReadLine());
+            //gastoLitros = float.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
+            //totalCombustivel = distanciaKm / gastoLitros;
+            //Console.WriteLine(totalCombustivel.ToString("F3", CultureInfo.InvariantCulture) + "Km/L");
+            //-------------------------------------------------------------------
+            //EXERCICIO 9 - Dois carros (X e Y) partem em uma mesma direção. O carro X sai com velocidade constante de 60 Km/h e o carro Y sai com velocidade constante de 90 Km/h.
+            //Em uma hora(60 minutos) o carro Y consegue se distanciar 30 quilômetros do carro X, ou seja, consegue se afastar um quilômetro a cada 2 minutos.
+            //Leia a distância(em Km) e calcule quanto tempo leva(em minutos) para o carro Y tomar essa distância do outro carro.
+            //int distancia, tempo;
+            //distancia = int.Parse(Console.ReadLine());
+            //tempo = distancia * 2;
+            //Console.WriteLine(tempo + "minutos");
+            //-------------------------------------------------------------------
+            //Exercicio 10 - Joaozinho quer calcular e mostrar a quantidade de litros de combustível gastos em uma viagem, ao utilizar um automóvel que faz 12 KM/L.
+            //Para isso, ele gostaria que você o auxiliasse através de um simples programa. Para efetuar o cálculo, deve-se fornecer o tempo gasto na viagem (em horas) e a velocidade média durante a mesma (em km/h).
+            //Assim, pode-se obter distância percorrida e, em seguida, calcular quantos litros seriam necessários. Mostre o valor com 3 casas decimais após o ponto.
+            int tempoGasto, velocidadeMedia, distancia;
+            double quantidadeLitros;
+            tempoGasto = int.Parse(Console.ReadLine());
+            velocidadeMedia = int.Parse(Console.ReadLine());
+            distancia = tempoGasto * velocidadeMedia;
+            quantidadeLitros = distancia / 12.0;
+            Console.WriteLine(quantidadeLitros.ToString("F3",CultureInfo.InvariantCulture));
         }
     }
 }
