@@ -109,13 +109,50 @@ namespace FirstProject.Exercicios
             //Exercicio 10 - Joaozinho quer calcular e mostrar a quantidade de litros de combustível gastos em uma viagem, ao utilizar um automóvel que faz 12 KM/L.
             //Para isso, ele gostaria que você o auxiliasse através de um simples programa. Para efetuar o cálculo, deve-se fornecer o tempo gasto na viagem (em horas) e a velocidade média durante a mesma (em km/h).
             //Assim, pode-se obter distância percorrida e, em seguida, calcular quantos litros seriam necessários. Mostre o valor com 3 casas decimais após o ponto.
-            int tempoGasto, velocidadeMedia, distancia;
-            double quantidadeLitros;
-            tempoGasto = int.Parse(Console.ReadLine());
-            velocidadeMedia = int.Parse(Console.ReadLine());
-            distancia = tempoGasto * velocidadeMedia;
-            quantidadeLitros = distancia / 12.0;
-            Console.WriteLine(quantidadeLitros.ToString("F3",CultureInfo.InvariantCulture));
+            //int tempoGasto, velocidadeMedia, distancia;
+            //double quantidadeLitros;
+            //tempoGasto = int.Parse(Console.ReadLine());
+            //velocidadeMedia = int.Parse(Console.ReadLine());
+            //distancia = tempoGasto * velocidadeMedia;
+            //quantidadeLitros = distancia / 12.0;
+            //Console.WriteLine(quantidadeLitros.ToString("F3",CultureInfo.InvariantCulture));
+            //-------------------------------------------------------------------
+            //EXCERCICIO 11 (MEDIA PONDERADA) - Leia 2 valores de ponto flutuante de dupla precisão A e B, que correspondem a 2 notas de um aluno.
+            //A seguir, calcule a média do aluno, sabendo que a nota A tem peso 3.5 e a nota B tem peso 7.5 (A soma dos pesos portanto é 11).
+            //Assuma que cada nota pode ir de 0 até 10.0, sempre com uma casa decimal.
+            //double A, B, MEDIA;
+            //A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //B  = double.Parse (Console.ReadLine(),CultureInfo.InvariantCulture);
+            //MEDIA = ((A * 3.5) + (B * 7.5)) / 11.0;
+            //Console.WriteLine("MEDIA" + MEDIA.ToString("F5",CultureInfo.InvariantCulture));
+            //-------------------------------------------------------------------
+            //EXERCICIO 12 (MEDIA PONDERADA) - Leia 3 valores, no caso, variáveis A, B e C, que são as três notas de um aluno.
+            //A seguir, calcule a média do aluno, sabendo que a nota A tem peso 2, a nota B tem peso 3 e a nota C tem peso 5.
+            //Considere que cada nota pode ir de 0 até 10.0, sempre com uma casa decimal.
+            //double A,B,C,MEDIA;
+            //A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture); 
+            //C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //MEDIA = ((A*2.0)+(B*3.0)+(C*5.0))/10.0;
+            //Console.WriteLine("MEDIA "+ MEDIA.ToString("F1",CultureInfo.InvariantCulture));
+            //-------------------------------------------------------------------
+            //EXERCICIO 13 - FAZER UM PROGRAMA PARA LER O NOME (APENAS UMA PALAVRA) E IDADE DE DUAS PESSOAS.
+            //AO FINAL MOSTRAR UMA MENSAGEM COM OS NOMES E IDAD MEDIA ENTRE AS PESSOAS COM UMA CASA DECIMAL.
+            string nome1, nome2;
+            int idade1, idade2;
+            double idadeMedia;
+
+            string[] vet;
+            vet = Console.ReadLine().Split(" ");
+            nome1 = vet[0];
+            idade1 = int.Parse (vet[1]);
+            vet = Console.ReadLine().Split(" ");
+            nome2 = vet[0];
+            idade2 = int.Parse(vet[1]);
+            idadeMedia = (double)(idade1 + idade2) / 2.0;
+            Console.WriteLine("A idade media de" + nome1 + "e" + nome2 + "é de " + idadeMedia.ToString("F1",CultureInfo.InvariantCulture));
+
+
         }
     }
 }
