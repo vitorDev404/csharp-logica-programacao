@@ -138,21 +138,37 @@ namespace FirstProject.Exercicios
             //-------------------------------------------------------------------
             //EXERCICIO 13 - FAZER UM PROGRAMA PARA LER O NOME (APENAS UMA PALAVRA) E IDADE DE DUAS PESSOAS.
             //AO FINAL MOSTRAR UMA MENSAGEM COM OS NOMES E IDAD MEDIA ENTRE AS PESSOAS COM UMA CASA DECIMAL.
-            string nome1, nome2;
-            int idade1, idade2;
-            double idadeMedia;
-
-            string[] vet;
-            vet = Console.ReadLine().Split(" ");
-            nome1 = vet[0];
-            idade1 = int.Parse (vet[1]);
-            vet = Console.ReadLine().Split(" ");
-            nome2 = vet[0];
-            idade2 = int.Parse(vet[1]);
-            idadeMedia = (double)(idade1 + idade2) / 2.0;
-            Console.WriteLine("A idade media de" + nome1 + "e" + nome2 + "é de " + idadeMedia.ToString("F1",CultureInfo.InvariantCulture));
-
-
+            //string nome1, nome2;
+            //int idade1, idade2;
+            //double idadeMedia;
+            //string[] vet;
+            //vet = Console.ReadLine().Split(" ");
+            //nome1 = vet[0];
+            //idade1 = int.Parse (vet[1]);
+            //vet = Console.ReadLine().Split(" ");
+            //nome2 = vet[0];
+            //idade2 = int.Parse(vet[1]);
+            //idadeMedia = (double)(idade1 + idade2) / 2.0;
+            //Console.WriteLine("A idade media de" + nome1 + "e" + nome2 + "é de " + idadeMedia.ToString("F1",CultureInfo.InvariantCulture));
+            //-------------------------------------------------------------------
+            //EXERCICIO 14 - Faça um programa que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas por ele no mês (em dinheiro).
+            //Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, informar o total a receber no final do mês, com duas casas decimais.
+            //string vendedor;
+            //double salarioFixo, totalDeVendas,salarioTotal;
+            //vendedor = Console.ReadLine();
+            //salarioFixo = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
+            //totalDeVendas =  double.Parse (Console.ReadLine(), CultureInfo.InvariantCulture);
+            //salarioTotal = totalDeVendas * 15.0 / 100 + salarioFixo;
+            //Console.WriteLine("TOTAL = R$ " + salarioTotal.ToString("F2", CultureInfo.InvariantCulture));
+            //-------------------------------------------------------------------
+            //EXERCICIO 15 - Faça um programa que calcule e mostre o volume de uma esfera sendo fornecido o valor de seu raio (R).
+            //A fórmula para calcular o volume é: (4/3) * pi * R3.
+            //Considere (atribua) para pi o valor 3.14159.
+            //double R, volume;
+            //R = double.Parse(Console.ReadLine());
+            //volume = 4.0/3.0 * 3.14159 * Math.Pow(R, 3);
+            //Console.WriteLine("VOLUME = " + volume.ToString("F3", CultureInfo.InvariantCulture));
+            //-------------------------------------------------------------------
         }
     }
 }
