@@ -169,6 +169,52 @@ namespace FirstProject.Exercicios
             //volume = 4.0/3.0 * 3.14159 * Math.Pow(R, 3);
             //Console.WriteLine("VOLUME = " + volume.ToString("F3", CultureInfo.InvariantCulture));
             //-------------------------------------------------------------------
+            //EXERCICIO 16 - Escreva um programa que leia três valores com ponto flutuante de dupla precisão: A, B e C. Em seguida, calcule e mostre:
+            // a) a área do triângulo retângulo que tem A por base e C por altura.
+            ////b) a área do círculo de raio C. (pi = 3.14159)
+            //c) a área do trapézio que tem A e B por bases e C por altura.
+            //d) a área do quadrado que tem lado B.
+            //e) a área do retângulo que tem lados A e B.
+            //double a, b, c, areaTrianguloRetangulo, areaCirculo, areaTrapezio, areaQuadrado, areaRetangulo;
+            //string[] vet;
+            //vet = Console.ReadLine().Split(' ');
+            //a = double.Parse(vet[0], CultureInfo.InvariantCulture);
+            //b = double.Parse(vet[1], CultureInfo.InvariantCulture);
+            //c = double.Parse(vet[2], CultureInfo.InvariantCulture);
+            //areaTrianguloRetangulo = (a * c) / 2.0;
+            //areaCirculo = 3.14159 * c * c;
+            //areaTrapezio = (a + b) * c / 2.0;
+            //areaQuadrado = b * b;
+            //areaRetangulo = a * b;
+            //Console.WriteLine("TRIANGULO: " + areaTrianguloRetangulo.ToString("F3", CultureInfo.InvariantCulture));
+            //Console.WriteLine("CIRUCLO: " + areaCirculo.ToString("F3", CultureInfo.InvariantCulture));
+            //Console.WriteLine("TRAPEZIO: " + areaTrapezio.ToString("F3", CultureInfo.InvariantCulture));
+            //Console.WriteLine("QUADRADO: " + areaQuadrado.ToString("F3", CultureInfo.InvariantCulture));
+            //Console.WriteLine("RETANGULO: " + areaRetangulo.ToString("F3", CultureInfo.InvariantCulture));
+            //-------------------------------------------------------------------
+            //EXERCICIO 17 - Leia os quatro valores correspondentes aos eixos x e y de dois pontos quaisquer no plano
+            //, p1(x1,y1) e p2(x2,y2) e calcule a distância entre eles, mostrando 4 casas decimais, segundo a fórmula
+            //double x1, y1, x2, y2,distancia;
+            //string [] vet;
+            //vet = Console.ReadLine().Split(' ');
+            //x1 = double.Parse (vet[0], CultureInfo.InvariantCulture);
+            //y1 = double.Parse(vet[1], CultureInfo.InvariantCulture);
+            //vet = Console.ReadLine().Split(' ');
+            //x2 = double.Parse(vet[0], CultureInfo.InvariantCulture);
+            //y2 = double.Parse(vet[1], CultureInfo.InvariantCulture);
+
+            //distancia = Math.Sqrt(Math.Pow(x2 - x1,2.0) + Math.Pow(y2 - y1,2.0));
+            //Console.WriteLine(distancia.ToString("F4", CultureInfo.InvariantCulture));
+            //-------------------------------------------------------------------
+            //EXERCICIO 18 - LER UM NUMERO EM SEGUNDOS E TRANSFORMAR EM HORAS:MINUTOS:SEGUNDOS
+            int numero, horas,resto, minutos, segundos;
+            numero = int.Parse(Console.ReadLine());
+            horas = numero / 3600;
+            resto = numero % 3600;
+            minutos = resto / 60;
+            segundos = resto % 60;
+            Console.WriteLine(horas + ":" + minutos + ":" + segundos);
+
         }
     }
 }
