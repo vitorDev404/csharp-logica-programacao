@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using FirstProject._01_IntrudcaoCSharp;
 using FirstProject._02_EntradaDeDados;
+using FirstProject.EstruturaCondicional;
 using FirstProject.FuncoesMatematicasEmCSharp;
 using System;
 using System.Globalization;
@@ -11,7 +12,7 @@ namespace FirstProject
     {
         static void Main(string[] args)
         {
-            Exercicios.Exercicios.Executar();
+            ExerciciosCondicionais.Executar();
         }
     }
 }
