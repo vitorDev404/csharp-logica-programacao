@@ -2,6 +2,7 @@
 using FirstProject._01_IntrudcaoCSharp;
 using FirstProject._02_EntradaDeDados;
 using FirstProject.EstruturaCondicional;
+using FirstProject.EstruturasDeRepeticoes;
 using FirstProject.FuncoesMatematicasEmCSharp;
 using System;
 using System.Globalization;
@@ -12,7 +13,7 @@ namespace FirstProject
     {
         static void Main(string[] args)
         {
-            ExerciciosCondicionais.Executar();
+            EstruturaDeRepeticaoEnquanto.Executar();
         }
     }
 }
