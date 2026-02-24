@@ -13,7 +13,7 @@ namespace FirstProject
     {
         static void Main(string[] args)
         {
-            EstruturaDeRepeticaoEnquanto.Executar();
+            ExerciciosEstrututasDeRepeticao.Executar();
         }
     }
 }
