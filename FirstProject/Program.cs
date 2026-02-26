@@ -4,6 +4,7 @@ using FirstProject._02_EntradaDeDados;
 using FirstProject.EstruturaCondicional;
 using FirstProject.EstruturasDeRepeticoes;
 using FirstProject.FuncoesMatematicasEmCSharp;
+using FirstProject.Vetores;
 using System;
 using System.Globalization;
 
@@ -13,7 +14,7 @@ namespace FirstProject
     {
         static void Main(string[] args)
         {
-            EstruturaDeRepeticaoPara.Executar();
+            VetoresEMatrizes.Executar();
         }
     }
 }

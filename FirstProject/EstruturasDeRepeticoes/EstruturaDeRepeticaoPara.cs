@@ -44,21 +44,25 @@ namespace FirstProject.EstruturasDeRepeticoes
                         switch (choice)
                         {
                             case 1:
-                                Console.WriteLine("BALANCE = $" + balance.ToString("2F", CultureInfo.InvariantCulture));
+                                Console.WriteLine("BALANCE = $" + balance.ToString("F2", CultureInfo.InvariantCulture));
                                 break;
                             case 2:
                                 Console.WriteLine("How much do you wnat to transfer? ");
                                 transfer = double.Parse(Console.ReadLine());
                                 balance = balance - transfer;
-                                Console.WriteLine("Transfer successful, your new balance is: $" + balance.ToString("2F", CultureInfo.InvariantCulture));
+                                Console.WriteLine("Transfer successful, your new balance is: $" + balance.ToString("F2", CultureInfo.InvariantCulture));
                                 break;
                             case 3:
                                 Console.WriteLine("How much you want to deposit? ");
                                 deposit = double.Parse(Console.ReadLine());
                                 balance = balance + deposit;
-                                Console.WriteLine("Deposit sucefull, your new balance is: $" + balance.ToString("2F", CultureInfo.InvariantCulture));
+                                Console.WriteLine("Deposit sucefull, your new balance is: $" + balance.ToString("F2", CultureInfo.InvariantCulture));
+                                break;
+                            case 4:
+                                Console.WriteLine("Exit");
                                 break;
                         }
+                    break;
                     }
                 }
                 else
